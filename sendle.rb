@@ -4,19 +4,11 @@
 class Sendle < Formula
   desc "send your pdf files to your kindle devices"
   homepage "https://github.com/t-yng/sendle"
-  url "https://github.com/t-yng/sendle/archive/v0.2.0.tar.gz"
-  sha256 "495f53bad4027fd13fc6a94234cb9a2b624abf9ea1cd831927cdcb3ea3dee6a6"
-
-  # depends_on "cmake" => :build
+  url "https://github.com/t-yng/sendle/releases/download/v0.2.0/sendle-v0.2.0.tar.gz"
+  sha256 "cf93205ce636f70bfab121118422e94d84ba66595227f2a74098404a3a7144cb"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-    # system "cmake", ".", *std_cmake_args
+    bin.install "sendle"
   end
 
   test do
