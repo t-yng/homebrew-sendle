@@ -5,7 +5,7 @@ class Sendle < Formula
   desc "send your pdf files to your kindle devices"
   homepage "https://github.com/t-yng/sendle"
   url "https://github.com/t-yng/sendle/releases/download/v0.2.0/sendle-v0.2.0.tar.gz"
-  sha256 "cf93205ce636f70bfab121118422e94d84ba66595227f2a74098404a3a7144cb"
+  sha256 "b69aab45faddaef5af0c7d7c2111701bb04c8975a8cb2196f4f4c4d1f39344fd"
 
   def install
     bin.install "sendle"
